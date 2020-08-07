@@ -1,1 +1,21 @@
-hello bug-dan
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>idnex</title>
+		<script src="static/js/jquery.min.js"></script>
+	</head>
+	<body>
+		<p  id="hello">hello word</p>
+		<a href="javascript:void(0)" onclick="clickMe()">点击我</a>
+	</body>
+	<script>
+		$(function(){
+			console.log($("#hello").html())
+		})
+		function clickMe(){
+			alert("你是傻子吗,让你点就点")
+			console.log($("#hello").html())
+		}
+	</script>
+</html>
